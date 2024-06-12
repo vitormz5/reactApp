@@ -1,48 +1,49 @@
-import logo from '../../assets/logo.png';
+import logo from "../../assets/itens/capacete.jpg";
 
-import tomate from '../../assets/frutas/Tomate.png';
-import brocolis from '../../assets/frutas/Brócolis.png';
-import batata from '../../assets/frutas/Batata.png';
-import pepino from '../../assets/frutas/Pepino.png';
-import abobora from '../../assets/frutas/Abóbora.png';
+import nivel from "../../assets/itens/nivel.jpg";
+import alicate from "../../assets/itens/alicate.png";
+import martelo from "../../assets/itens/martelo.jpg";
+import prego from "../../assets/itens/prego.jpg";
+import cimento from "../../assets/itens/cimento.jpg";
 
 const cesta = {
   topo: {
-    titulo: "Detalhe da cesta",
+    titulo: "Listagem de Materiais",
   },
   detalhes: {
-    nome: "Cesta de Verduras",
+    nome: "Lista de Materiais Necessários",
     logoFazenda: logo,
-    nomeFazenda: "Jenny Jack Farm",
-    descricao: "Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha",
+    nomeFazenda: "Example LTDA",
+    descricao:
+      "Aqui ficarão os itens necessários para dar continuidade em sua obra.",
     preco: "R$ 40,00",
     botao: "Comprar",
   },
   itens: {
-    titulo: "Itens da cesta",
+    titulo: "Materiais e Ferramentas",
     lista: [
       {
-        nome: "Tomate",
-        imagem: tomate,
+        nome: "Nível",
+        imagem: nivel,
       },
       {
-        nome: "Brócolis",
-        imagem: brocolis,
+        nome: "Alicate",
+        imagem: alicate,
       },
       {
-        nome: "Batata",
-        imagem: batata,
+        nome: "Martelo",
+        imagem: martelo,
       },
       {
-        nome: "Pepino",
-        imagem: pepino,
+        nome: "Prego",
+        imagem: prego,
       },
       {
-        nome: "Abóbora",
-        imagem: abobora,
-      }
-    ]
-  }
-}
+        nome: "Cimento",
+        imagem: cimento,
+      },
+    ],
+  },
+};
 
 export default cesta;

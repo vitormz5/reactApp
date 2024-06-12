@@ -1,22 +1,31 @@
-import React from 'react';
-import { Image, StyleSheet, View, TouchableOpacity } from 'react-native';
+import React from "react";
+import { Image, StyleSheet, View, TouchableOpacity } from "react-native";
 
-import Texto from '../../../componentes/Texto';
+import Texto from "../../../componentes/Texto";
 
-export default function Detalhes({ nome, logoFazenda, nomeFazenda, descricao, preco, botao }) {
-  return <>
-    <Texto style={estilos.nome}>{ nome }</Texto>
-    <View style={estilos.fazenda}>
-      <Image source={logoFazenda} style={estilos.imagemFazenda} />
-      <Texto style={estilos.nomeFazenda}>{ nomeFazenda }</Texto>
-    </View>
-    <Texto style={estilos.descricao}>{ descricao }</Texto>
-    <Texto style={estilos.preco}>{ preco }</Texto>
+export default function Detalhes({
+  nome,
+  logoFazenda,
+  nomeFazenda,
+  descricao,
+  preco,
+  botao,
+}) {
+  return (
+    <>
+      <Texto style={estilos.nome}>{nome}</Texto>
+      <View style={estilos.fazenda}>
+        <Image source={logoFazenda} style={estilos.imagemFazenda} />
+        <Texto style={estilos.nomeFazenda}>{nomeFazenda}</Texto>
+      </View>
+      <Texto style={estilos.descricao}>{descricao}</Texto>
+      <Texto style={estilos.preco}>{preco}</Texto>
 
-    <TouchableOpacity style={estilos.botao} onPress={() => {}}>
-      <Texto style={estilos.textoBotao}>{ botao }</Texto>
-    </TouchableOpacity>
-  </>
+      <TouchableOpacity style={estilos.botao} onPress={() => {}}>
+        <Texto style={estilos.textoBotao}>{botao}</Texto>
+      </TouchableOpacity>
+    </>
+  );
 }
 
 const estilos = StyleSheet.create({
@@ -24,7 +33,7 @@ const estilos = StyleSheet.create({
     color: "#464646",
     fontSize: 26,
     lineHeight: 42,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   fazenda: {
     flexDirection: "row",
@@ -64,4 +73,4 @@ const estilos = StyleSheet.create({
     lineHeight: 26,
     fontWeight: "bold",
   },
-})
+});
